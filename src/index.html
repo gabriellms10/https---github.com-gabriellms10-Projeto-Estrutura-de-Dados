@@ -1,0 +1,67 @@
+p<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Inteligente 2.0</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Playlist Inteligente</h1>
+            <p>Adicione músicas do YouTube e crie sua playlist personalizada</p>
+        </header>
+
+        <div class="main-content">
+            <section class="player-section">
+                <h2 class="section-title">Adicionar Música</h2>
+                <div class="input-group">
+                    <label for="youtube-url">Link do YouTube</label>
+                    <input type="text" id="youtube-url" placeholder="Ex: https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                </div>
+                <div class="button-group">
+                    <button id="add-btn" class="btn-primary">
+                        <i class="fas fa-plus"></i> Adicionar
+                    </button>
+                    <button id="play-btn" class="btn-secondary">
+                        <i class="fas fa-play"></i> Play
+                    </button>
+                    <button id="next-btn" class="btn-secondary">
+                        <i class="fas fa-step-forward"></i>
+                    </button>
+                    <button id="shuffle-btn" class="btn-secondary">
+                        <i class="fas fa-random"></i>
+                    </button>
+                </div>
+
+                <div class="player-container">
+                    <div id="player" class="player-placeholder">
+                        <i class="fas fa-music"></i>
+                        <p>Nenhuma música selecionada</p>
+                    </div>
+                </div>
+
+                <div class="now-playing" id="now-playing">
+                    <i class="fas fa-headphones"></i>
+                    <span>Nenhuma música em reprodução</span>
+                </div>
+            </section>
+
+            <section class="playlist-section">
+                <h2 class="section-title">Sua Playlist</h2>
+                <ul class="playlist" id="playlist">
+                    <!-- Itens serão adicionados via JavaScript -->
+                </ul>
+                <div class="playlist-stats" id="playlist-stats">
+                    0 músicas na playlist
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
